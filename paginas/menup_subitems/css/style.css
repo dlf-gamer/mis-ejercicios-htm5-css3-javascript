@@ -1,0 +1,84 @@
+/* estilos generales */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    width: 100%;
+}
+
+div{
+    background-color: #000000;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+nav ul li{
+    line-height: 3em;
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 0 2.5em;
+    display: block;
+    transition: .5s;
+}
+
+.menup{
+    width: 100%;
+    background: darkcyan;
+    display: table;
+}
+
+.menup ul{
+    position: absolute;
+}
+
+.menup > li{
+    float: left;
+    width: 200px;
+}
+
+nav ul li a:hover{
+    background: rgba(0,0,0,.5);
+}
+
+/* segundo nivel */
+nav li li{
+    background: rgb(0, 120, 150);
+    width: 200px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s;
+}
+
+nav ul li:hover > ul > li{
+    max-height: 500px;
+    overflow: visible;
+}
+
+.menup > li > li{
+    top: 100%;
+}    
+
+/* tercer nivel */
+.menup ul ul{
+    left: 100%;
+    top: 0;
+}

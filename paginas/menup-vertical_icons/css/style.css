@@ -1,0 +1,88 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #eaeaeaeb;
+	box-sizing: border-box;
+	background-size: cover;
+	margin: 0 auto 0 auto;
+	width: 100%;
+}
+
+div.div-titulo{
+	background-color: #000000;
+	width: 100%;
+	height: 100px;
+}
+
+div.div-titulo h1{
+	text-align: center;
+	color: white;
+	padding-top: 30px;
+}
+
+#mostrar-nav > label {
+	margin-top: 1em;
+    cursor: pointer;
+    position: absolute;
+    left: 1em;
+    z-index: 10;/* El ícono hamburguesa queda por encima del menú */
+    font-size: 1.3em;
+}
+
+nav {
+    background: rgba(0,0,0,.8);
+    box-sizing: border-box; /* Evitar que la caja se expanda */
+    position: absolute;
+    left: -18em; /* Conseguir que el menú se esconda por defecto*/
+    padding-top: 2em;
+    transition: all 0.5s;
+    height: 100%;
+    z-index: 5; /* El menú debe quedar por debajo del toggle(ícono hamburguesa) */
+}
+
+.menu {
+    list-style: none;
+    line-height: 40px;
+    margin: 1em auto;
+    padding-left: 0;
+    width: 18em;
+}
+
+.menu a {
+    color: #ddd;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    width: 100%;
+    transition: all .5s;
+}
+
+.menu li {
+    box-shadow: 3px 0 rgba(255,255,225, .2) inset;
+    padding-left: 1.3em;
+    margin-right: 10px;
+}
+
+.menu li:hover {
+    box-shadow: 18em 0 rgba(255,255,225, .2) inset;
+}
+
+.menu a:hover {
+    margin-left: 1em;
+}
+
+.menu li a span {
+    margin-left: 10px;
+}
+
+.fa-bars {
+    color: black;
+}
+
+nav.mostrar {
+    left: 0;
+}

@@ -1,0 +1,108 @@
+*{
+    top: 0;
+    left: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F6F6F6;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0 auto 0 auto;
+    width: 95%;
+}
+
+div.div-encabezado{
+    width: 100%;
+}
+
+div.div-titulo-invisible, input.input-texto-invisible{
+    width: 100%;
+    visibility: hidden;
+}
+
+div.div-titulo-fijo{
+    background-color: red;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 15px;
+}
+
+input.input-texto-invisible{
+    padding: 16px;
+    
+}
+
+input.input-texto-fijo{
+    padding-right: 150px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    border-radius: 20px;
+    margin-left: 35%;
+    float: left;
+    border: 0;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.div-catalogo-main{
+    width: 100%;
+    background-color: lavender;
+}
+
+h1.h1-titulo-catalogo{
+    text-align: center;
+}
+
+div.div-content-img{
+    background-color: white;
+    border-radius: 15px;
+    width: 300px;
+    margin-left: 1rem;    
+    margin-bottom: 1rem;
+    float: left;
+    max-width: 300px;
+    min-width: 220px;
+}
+
+a.a-text-decoration{
+    color: black;
+    list-style: none;
+	text-decoration: none;
+}
+
+p.p-descrition{
+    margin-left: 25px;
+}
+
+img.img-catalogo-inicio{
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+p.p-precio-center{
+    text-align: center;
+}
+
+/* Para Celulares Moviles */
+@media only screen and (max-width: 768px){
+    
+}
+
+
+
+/* Para las Tablet*/
+@media only screen and (max-width: 768px) and (max-width: 1024px){
+
+}
+
+
+
+/* Para pc y Portatiles escritorio*/
+@media only screen and (max-width: 1024px){
+
+}

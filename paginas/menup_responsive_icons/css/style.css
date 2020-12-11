@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    text-align: left;
+    display: block;
+    color: white;
+}
+.titulo {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+}
+.menup_bar {
+    display: none;
+}
+body {
+    background: #fefefe;
+}
+header {
+    width: 100%;
+}
+header nav {
+    background-color: #FFE53B;
+    background-image: linear-gradient(147deg, #353431 0%, #FF2525 74%);
+    width: 100%;
+    margin: 0 auto;
+    z-index: 10;
+}
+header nav ul {
+    list-style: none;
+    text-align: right;
+}
+header nav ul li {
+    display: inline-block;
+    position: relative;
+}
+header nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+}
+header nav ul li a span {
+    margin-right: 10px;
+}
+/* header nav ul li:hover {
+    background: rgb(191,0,6);
+} */
+/* header nav ul li:hover .children {
+    display: block;
+    width: 180%;
+    text-align: left;
+    z-index: 20;
+} */
+header nav ul li .children {
+    display: none;
+    width: 150%;
+    background: rgb(230,230,230);
+    position: absolute;
+    text-align: left;
+}
+header nav ul li .children li {
+    display: block;
+    border: 1px solid rgba(255,255,255,.5);
+}
+header nav ul li .children li a {
+    display: block;
+    background-color: #FFE53B;
+   background-image: linear-gradient(147deg, #4d4c48 0%, #FF2525 74%);
+    
+};
+.main-content {
+    margin: 2em;
+    text-align: justify;
+}
+@media screen and (max-width: 768px) {
+    body {
+        padding-top: 69px; 
+    }
+    .titulo {
+        display: none;
+    }
+    .menup_bar {
+        display: block;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        background-color: #FFE53B;
+        background-image: linear-gradient(147deg, #363636 0%, #FF2525 74%);
+    }
+    .menup_bar .bt-menu {
+        display: block;
+        padding: 20px;
+        color: #fff;
+        font-size: 25px;
+        font-weight: 900;
+        text-decoration: none;
+    }
+    .menup_bar span {
+        float: right;
+        font-size: 38px;
+    }
+    header nav {
+        width: 80%;
+        position: fixed;
+        right: 100%;
+        height: calc(100% - 80px);
+        background: rgb(230,230,230);
+        margin: 0;
+        overflow: scroll;
+    }
+    header nav ul li {
+        display: block;
+        border: 1px solid rgba(255,255,255,.5);
+    }
+    header nav ul li:hover {
+        background: white;
+    }
+    header nav ul li a {
+        padding: 12px;
+        display: block;
+        text-align: left;
+        color: rgb(64,64,64);/* aqui es para cambiar  de color letras  */
+    }
+    header nav ul li a:hover {
+        padding: 12px;
+        background: white;/* aqui es para cambiar  de color cuando paso el mause  */
+        color: black;
+    }
+    header nav ul li .children {
+        width: 100%;
+        background: gainsboro;
+        color: white;
+        position: relative;
+    }
+    header nav ul li .children a {
+        margin-left: 20px;
+    }
+    header nav ul li .icon-chevron-small-down {
+        float: right;
+        top: 3px;
+        margin-left: 10px;
+        margin-right: 0;
+    }
+    .main-content {
+        margin: 2em;
+        text-align: justify;
+    }
+}
